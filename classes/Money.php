@@ -7,8 +7,7 @@ use \Exception\InvalidArgumentException;
 
 class Money extends Currency
 {
-    private $amount;
-    protected Currency $currency;
+    private float $amount;
 
     public function __construct($isoCode, $amount)
     {
@@ -23,11 +22,10 @@ class Money extends Currency
 
     public function equals($newMoney)
     {
-        parent::equals($newMoney);
-        if  ($this->amount != $newMoney->amount)
-            echo "Amount is different." . "<br>";
-        else
-            echo "Amount is equal" . "<br>";
+        if  ($this->amount == $newMoney->amount && parent::equals($newMoney)) {
+            return true;
+        }
+        return false;
     }
 
     public function add($newMoney)
@@ -38,10 +36,4 @@ class Money extends Currency
         return  "The sum equals:  " . $sum . $this->getIsoCode() . "<br>";
     }
 }
-
-
-
-
-
-
 
