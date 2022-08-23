@@ -9,7 +9,7 @@ class Mysql implements  Database
 {
     public function getData()
     {
-        return 'some data from database';
+        return  'some data from database';
     }
 }
 
@@ -27,3 +27,5 @@ class Controller
         $this->adapter->getData($this);
     }
 }
+$contoler = new Controller(new Mysql());
+echo $contoler->getData();
