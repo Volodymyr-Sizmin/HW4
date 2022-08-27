@@ -2,7 +2,9 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "classes\\": "classes"
+      "classes\\": "classes",
+      "classes2\\": "tv_abstract_factory/classes2",
+      "interfaces\\": "tv_abstract_factory/interfaces"
     }
   }
 }

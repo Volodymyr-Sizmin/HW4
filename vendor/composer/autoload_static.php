@@ -7,21 +7,52 @@ namespace Composer\Autoload;
 class ComposerStaticInit8302faf734b1750242329ad85c38cc96
 {
     public static $prefixLengthsPsr4 = array (
+        'i' => 
+        array (
+            'interfaces\\' => 11,
+        ),
         'c' => 
         array (
             'classes\\' => 8,
+            'classes2\\' => 9,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'interfaces\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tv_abstract_factory/interfaces',
+        ),
         'classes\\' => 
         array (
             0 => __DIR__ . '/../..' . '/classes',
+        ),
+        'classes2\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tv_abstract_factory/classes2',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'classes2\\BuildProduceOptions' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/BuildProduceOptions.php',
+        'classes2\\LgApp' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/LgApp.php',
+        'classes2\\LgLcd' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/LgLcd.php',
+        'classes2\\LgLed' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/LgLed.php',
+        'classes2\\SonyApp' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/SonyApp.php',
+        'classes2\\SonyLcd' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/SonyLcd.php',
+        'classes2\\SonyLed' => __DIR__ . '/../..' . '/tv_abstract_factory/classes2/SonyLed.php',
+        'classes\\BuildProduceOptions' => __DIR__ . '/../..' . '/classes/BuildProduceOptions.php',
+        'classes\\Currency' => __DIR__ . '/../..' . '/classes/Currency.php',
+        'classes\\LgApp' => __DIR__ . '/../..' . '/classes/LgApp.php',
+        'classes\\LgLcd' => __DIR__ . '/../..' . '/classes/LgLcd.php',
+        'classes\\LgLed' => __DIR__ . '/../..' . '/classes/LgLed.php',
+        'classes\\Money' => __DIR__ . '/../..' . '/classes/Money.php',
+        'classes\\SonyLcd' => __DIR__ . '/../..' . '/classes/SonyLcd.php',
+        'classes\\SonyLed' => __DIR__ . '/../..' . '/classes/SonyLed.php',
+        'interfaces\\ILcd' => __DIR__ . '/../..' . '/tv_abstract_factory/interfaces/ILcd.php',
+        'interfaces\\ILed' => __DIR__ . '/../..' . '/tv_abstract_factory/interfaces/ILed.php',
+        'interfaces\\ProduceApp' => __DIR__ . '/../..' . '/tv_abstract_factory/interfaces/ProduceApp.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
